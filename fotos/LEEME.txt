@@ -1,0 +1,8 @@
+Poner acá las cuatro fotos, con estos nombres exactos:
+
+  taller-llaves.jpg        -> el panel de llaves, cilindros y cerraduras
+  cerradura-instalada.jpg  -> la cerradura de embutir en la puerta
+  llaves-nuevas.jpg        -> la doble paleta con el juego de llaves
+  local-cerrajeria.jpg     -> el frente del local con el telefono pintado
+
+Comprimirlas antes en squoosh.app (ancho ~1400 px, calidad 70).

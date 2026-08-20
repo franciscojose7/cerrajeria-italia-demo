@@ -48,3 +48,42 @@ de ~1400 px y calidad 70. Con eso quedan en 100–150 KB cada una.
 Sugerencias: `cerrajeriaitalia.com.uy`, `cerrajeriaitalia.uy`.
 El registro va a nombre del cliente en NIC.UY. El resto del procedimiento
 está en el playbook del proyecto.
+
+---
+
+## Publicar en GitHub Pages
+
+Este repo ya viene con el commit hecho. Solo falta crearlo en GitHub y pushear.
+
+### 1. Crear el repo vacío
+
+En github.com → **New repository**:
+
+- Nombre: `cerrajeria-italia`
+- **Público** (Pages gratis pide público)
+- **Sin** README, **sin** .gitignore, **sin** licencia — el repo ya los trae
+
+### 2. Pushear desde tu máquina
+
+```bash
+cd cerrajeria-italia
+git remote add origin https://github.com/franciscojose7/cerrajeria-italia.git
+git push -u origin main
+```
+
+### 3. Prender Pages
+
+**Settings → Pages → Source: Deploy from a branch → Branch: `main` / `(root)` → Save.**
+
+En un minuto queda en:
+`https://franciscojose7.github.io/cerrajeria-italia/`
+
+> No agregar nada en `.github/workflows/`. Para un sitio estático en la raíz
+> alcanza con "Deploy from a branch", y el token del `gh` CLI no trae el scope
+> `workflow`: el push se rechaza.
+
+### 4. Subir las fotos
+
+Desde la web de GitHub: entrar a la carpeta `fotos/` → **Add file → Upload files**,
+arrastrar las cuatro con los nombres exactos de la tabla de arriba, y **Commit changes**.
+Pages redeploya solo.
